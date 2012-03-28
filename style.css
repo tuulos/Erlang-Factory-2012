@@ -1,0 +1,259 @@
+/* Common */
+
+a{
+	color: #87a5c9;
+}
+
+/* Notes window */
+
+.notes body{
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica;
+}
+
+.button
+{
+        display: inline-block;
+        white-space: nowrap;
+        background-color: #ccc;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+        background-image: -webkit-linear-gradient(top, #eee, #ccc);
+        background-image: -moz-linear-gradient(top, #eee, #ccc);
+        background-image: -ms-linear-gradient(top, #eee, #ccc);
+        background-image: -o-linear-gradient(top, #eee, #ccc);
+        background-image: linear-gradient(top, #eee, #ccc);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+        border: 1px solid #777;
+        padding: 0 1.5em;
+        margin: 0.5em;
+        font: bold 1em/2em Arial, Helvetica;
+        text-decoration: none;
+        color: #333;
+        text-shadow: 0 1px 0 rgba(255,255,255,.8);
+        -moz-border-radius: .2em;
+        -webkit-border-radius: .2em;
+        border-radius: .2em;
+        -moz-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+        -webkit-box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+        box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.button:hover
+{
+        background-color: #ddd;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ddd));
+        background-image: -webkit-linear-gradient(top, #fafafa, #ddd);
+        background-image: -moz-linear-gradient(top, #fafafa, #ddd);
+        background-image: -ms-linear-gradient(top, #fafafa, #ddd);
+        background-image: -o-linear-gradient(top, #fafafa, #ddd);
+        background-image: linear-gradient(top, #fafafa, #ddd);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
+}
+
+.button:active
+{
+        -moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+        -webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+        box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+        position: relative;
+        top: 1px;
+}
+
+.button:focus
+{
+        outline: 0;
+        background: #fafafa;
+}    
+
+.button:before
+{
+        background: #ccc;
+        background: rgba(0,0,0,.1);
+        float: left;
+        width: 1em;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0 1em 0 -1em;
+        padding: 0 .2em;
+        -moz-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+        -webkit-box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+        box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+        -moz-border-radius: .15em 0 0 .15em;
+        -webkit-border-radius: .15em 0 0 .15em;
+        border-radius: .15em 0 0 .15em;
+        pointer-events: none;
+}
+	
+
+.notes #layout{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+.notes #layout td{
+	vertical-align: top;
+}
+.notes #slide_cell{
+	width: 250px;
+	background-color: #444;
+	color: #fff;
+}
+.notes #notes_cell{
+	background-color: #eee;
+}
+.notes #slide_cell,
+.notes #notes_cell{	
+	padding: 0 1em;
+	margin-top: 1em;
+	font-size: 1.4em;
+}
+.notes #slide_cell h4,
+.notes #notes_cell h4{
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.notes #slide{	
+	font-family: Bevan;
+}
+.notes #slide img{
+	max-width: 100%;
+}
+.notes #info{
+	background-color: #fff;
+	height: 2em;
+	color: #444;
+	text-align: center;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.notes #layout td#info{
+	vertical-align: middle;
+}
+	
+.notes #layout{
+}
+
+.begin h4{
+	display: none;
+}
+/* Slides window */
+
+
+.slide body{
+	overflow: hidden;
+	background-color: #000;
+	color: #fff;
+	-webkit-text-shadow: 0px 0px 4px #000;
+	-moz-text-shadow: 0px 0px 4px #000;
+	text-shadow: 0px 0px 4px #000;
+	background: #4c4c4c; /* Old browsers */
+    background-image: linear-gradient(bottom, #190014 0%, #3D0D34 100%);
+    background-image: -o-linear-gradient(bottom, #190014 0%, #3D0D34 100%);
+    background-image: -moz-linear-gradient(bottom, #190014 0%, #3D0D34 100%);
+    background-image: -webkit-linear-gradient(bottom, #190014 0%, #3D0D34 100%);
+    background-image: -ms-linear-gradient(bottom, #190014 0%, #3D0D34 100%);
+}
+
+.upside-down{
+    -moz-transform: scaleX(-1);
+    -moz-transform: scaleY(-1); /* Gecko */
+    -o-transform: scaleX(-1); /* Operah */
+    -o-transform: scaleY(-1); /* Operah */
+    -webkit-transform: scaleX(-1); /* webkit */
+    -webkit-transform: scaleY(-1); /* webkit */
+    transform: scaleX(-1); /* standard */
+    transform: scaleY(-1); /* standard */
+    filter: FlipH; /* IE 6/7/8 */
+    filter: FlipV; /* IE 6/7/8 */
+}
+
+.slide body, p{
+	margin: 0;
+	padding: 0;
+}
+
+.slide body{
+/*	font-family: Bevan; */
+	font-family: Helvetica; 
+}
+
+.slide #td{
+	text-align: center;
+	/* vertical-align: middle; */
+}
+
+.slide img{
+    /*
+	-webkit-box-shadow: 0px 0px 4px #000;
+	-moz-box-shadow: 0px 0px 4px #000;
+	box-shadow: 0px 0px 4px #000;
+    */
+/*	background-color: #fff; */
+}
+
+.arch-title{
+    font-size: 50px;
+}
+
+.arch{
+    margin-top: 30px;
+}
+
+.archbox{
+    margin-left:auto;
+    margin-right:auto;
+    width: 700px;
+    height: 600px;
+}
+
+.slide body pre{
+	text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Monaco, monospace;
+    width: 80%;
+}
+
+
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+.principle{
+    color: #aaa;
+}
+
+.principle strong{
+    color: #fff;
+    font-size: 130%;
+}
+
+.workloads{
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+}
+
+.workloads td{
+    margin: 5px;
+    text-align: left;
+}
+
+.workloads thead{
+    color: #aaa;
+}
+
+.workloads tbody td{
+    border-top: 1px solid #aaa;
+}
+
+.workloads code{
+    font-family: Monaco, monospace;
+    font-size: 70%;
+}
+

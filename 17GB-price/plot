@@ -1,0 +1,12 @@
+
+gnuplot <<END
+set terminal svg enhanced size 800 500 fname "Helvetica" fsize 20
+set output "../17gb-price.svg"
+set style data histograms
+set yrange [0:900]
+set key left top textcolor rgb "white"
+set border linecolor rgb "white"
+set ylabel "price per month" textcolor rgb "white"
+set title "Cost of 17GB RAM per month" textcolor rgb "white"
+plot 'data' using 2:xticlabels(1) notitle fs solid 0.8 lt rgb "#ffffff"
+END

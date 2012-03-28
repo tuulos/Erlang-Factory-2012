@@ -1,0 +1,16 @@
+
+gnuplot <<END
+set terminal svg enhanced size 800 500 fname "Helvetica" fsize 20
+set output "../ec2pricing.svg"
+set yrange [0:1.2]
+unset xtics
+set ylabel "price per hour" textcolor rgb "white"
+set xlabel "last month" textcolor rgb "white"
+set key left top textcolor rgb "white"
+set border linecolor rgb "white"
+set xrange [1330124190000:1332695372000]
+set title "Cost of a large instance" textcolor rgb "white"
+plot 'large.data' w lines linewidth 4 linecolor rgb "#666666" title " on demand",\
+     'reserved.data' w lines linewidth 4 linecolor rgb "#999999" title " reserved",\
+     'spot.data' w lines linewidth 4 linecolor rgb "#eeeeee" title " spot"
+END
