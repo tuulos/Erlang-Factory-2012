@@ -1,3 +1,4 @@
+ [ ![Bitdeli](https://d38jwvt3lv6c1n.cloudfront.net/tuulos/Erlang-Factory-2012/trend.png) ](http://bitdeli.com "Bitdeli")
 
 Ville's presentation at [Erlang Factory SF Bay Area 2012](http://www.erlang-factory.com/conference/SFBay2012/).
 
